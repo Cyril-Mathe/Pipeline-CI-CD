@@ -267,7 +267,7 @@ terraform apply -var-file="terraform.tfvars" -var="db_password=secret456"
 ## Livrable
 - 2 modules Terraform (webapp + database)
 - 1 environnement dev fonctionnel utilisant les modules
-- Variables sensibles gérées correctement
+- Variables sensibles gérées correctementter
 - Cycle complet apply → verify → destroy
 
 ## Aide
