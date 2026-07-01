@@ -14,6 +14,11 @@ resource "docker_network" "main" {
   name = "devops-${var.environment}"
 }
 
+import {
+  to = docker_network.main
+  id = "devops-${var.environment}"
+}
+
 module "webapp" {
   source      = "../../modules/webapp"
   app_name    = var.app_name
